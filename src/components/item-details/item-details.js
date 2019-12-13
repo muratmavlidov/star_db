@@ -50,8 +50,12 @@ class Itemdetails extends Component {
     }
 
     if (this.recieveData.has(itemId)) {
-      this.setState({
-        item: this.recieveData.get(itemId)
+      this.setState(() => {
+        const { item, image } = this.recieveData.get(itemId);
+        return {
+          item,
+          image
+        }
       })
       return;
     }
@@ -59,7 +63,10 @@ class Itemdetails extends Component {
     this.setState({loading: true});
     getData(itemId)
       .then(item => {
-        this.recieveData.set(itemId, item);
+        this.recieveData.set(itemId, {
+          item,
+          image: getImageUrl(item)
+        });
         this.setState({
           item,
           loading: false,
