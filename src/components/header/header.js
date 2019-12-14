@@ -1,13 +1,18 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './header.sass';
 
 const Header = () => (
   <div className="header">
-    <h1>StarDB</h1>
+    <Link to="/">
+      <h1>StarDB</h1>
+    </Link>
     <nav className="header-nav">
-      <a href="/" className="nav-item">People</a>
-      <a href="/" className="nav-item">Planets</a>
-      <a href="/" className="nav-item">Starships</a>
+      <Link to="/people/" className="nav-item">People</Link>
+      <Link to="/planets/" className="nav-item">Planets</Link>
+      <Link to="/starships/" className="nav-item">Starships</Link>
+      <Link to="/login" className="nav-item">Login</Link>
+      <Link to="/secret" className="nav-item">Secret</Link>
     </nav>
   </div>
 );
