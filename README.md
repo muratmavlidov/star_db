@@ -5,7 +5,7 @@ If you want to see how the project looks, for your convenience, I posted the pro
 
 ![Pic from star_db](https://starwars-visualguide.com/assets/img/characters/4.jpg)
 
-##### Click ***[here](https://star-db-2e3cc.web.app/)***  to view the project.
+##### Click ***[HERE](https://star-db-2e3cc.web.app/)***  to view the project.
 
 #### Well, if you want to work with this project, here is the instruction:
 
